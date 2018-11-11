@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+    <!--Adding the Database to code-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!--Adding the JQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--Adding Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS Style Goes Here-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css"> -->
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Train Tracker -->
+  <div class="wrapper">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+        </div>
+
+        <div class="head">
+                <h1 class="text-center">Train Tracker</h1>
+                <h3 class="text-center">This Ticket is issued subject to the Printed By-Laws, Regulations & Notices of the Committe</h3>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12">
+                  <!-- Current Trains-->
+                <div class="panel panel-default">
+                    <div class="panel heading"></div>
+                    <div class="panel-body">
+                      <table class="table table-striped" id='trainScheduleTable'>
+                        <thead>
+                          <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency</th>
+                            <th>Minutes Away</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Add Train</div>
+            <div class="panel-body"></div>
+                <div class="form">
+                    <form>
+                        <div class="form-group">
+                            <label for="trainNameForm">Train Name</label>
+                            <input type="text" class="form-control" id="trainNameForm">
+                        </div>
+                        <div class="form-group">
+                            <label for="destinationForm"> Destination</label>
+                            <input type="text" class="form-control" id="destinationForm">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstTrainTimeForm">First Train Time (HH:mm - Miltary Time)</label>
+                            <input type="text" class="form-control" id="destinationForm">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequencyNameForm">
+                        </div>
+                        <button type="submit" class="btn primary btn-lg btn-blcok" id="click-button">Submit</button>
+                        
+                    </form>
+                </div>
+        </div> 
+        <footer id="myFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Get started</h5>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>About us</h5>
+                            <ul>
+                                <li><a href="#">Company Information</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Help desk</a></li>
+                                <li><a href="#">Forums</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 info">
+                            <h5>Information</h5>
+                            <p> This train is bound for glory, this train.
+                                    This train is bound for glory, this train.
+                                    This train is bound for glory,
+                                    Nobody rides it but the righteous and the holy.
+                                    This train is bound for glory, this train.
+                                    
+                                    This train don't carry no gamblers, this train;
+                                    This train don't carry no gamblers, this train;
+                                    This train don't carry no gamblers,
+                                    No crap shooters and the midnight ramblers
+                                    This train don't carry no gamblers, this train.
+                                     </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+
+              <!--Add JavaScript Here-->
+              <script src="assets/firebase.js"></script>
+    </div>
+</body>
+</html>

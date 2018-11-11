@@ -1,0 +1,156 @@
+*{
+    font-family: 'EB Garamond', serif;
+    
+}
+
+.wrapper {
+    border-style: solid;
+    background-color: #ffefd4
+}
+
+ h1 {
+    text-align: center;
+    color:black;
+    
+}
+
+h3 {
+    text-align: center;
+    color:black;
+    text-decoration: overline;
+}
+
+
+
+.jumbotron {
+    border-radius: 2px;
+    background-image: url(old-station-2.jpg);
+    background-color: #ffffff;
+    background-size: cover; 
+    height: 1000;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    
+} 
+
+.table {
+	border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 1px;
+	
+}
+
+.panel {
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    padding: 4%;
+    background-color: #F7F7F7;
+}
+
+.panel-default {
+    border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+panel-heading{
+	border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+    border-width: 1px;	
+}
+
+#myFooter .row {
+margin-bottom: 60px;
+}
+
+#myFooter .info{
+text-align: justify; 
+color: #afb0b1;
+}
+
+#myFooter ul {
+list-style-type: none;
+padding-left: 0;
+line-height: 1.7;
+}
+
+#myFooter h5 {
+font-size: 18px;
+color: #33373e
+font-weight: bold;
+margin-top: 30px;
+}
+
+#myFooter .logo{
+margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+color:#33373e;
+font-size: 28px;
+float: left;
+font-weight: bold;
+line-height: 68px;
+margin: 0;
+padding: 0;
+}
+
+#myFooter a {
+color: #33373e;
+text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+text-decoration: none;
+color: white;
+}
+
+#myFooter .second-bar {
+text-align: center;
+background-color: #33373e;
+text-align: center;
+}
+
+#myFooter .second-bar a {
+font-size: 22px;
+color: #9fa3a9;
+padding: 10px;
+transition: 0.2s;
+line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+text-decoration: none;
+}
+
+#myFooter .social-icons {
+float:right;
+}
+
+
+#myFooter .facebook:hover {
+color: #0077e2;
+}
+
+#myFooter .google:hover {
+color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+#myFooter {
+    text-align: center;
+}
+
+#myFooter .info{
+    text-align: center;
+}
+}
